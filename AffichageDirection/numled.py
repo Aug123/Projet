@@ -64,7 +64,7 @@ def direction_right(sense, color=(255, 255, 255)):
 	"""used to print an arrow in the right direction"""
 	if not sense:
 		raise Exception("Sense HAT is unavailable")
-	
+	sense.clear()	
 	sense.set_pixel(1,4,color)
 	
 		
