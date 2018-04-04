@@ -1,3 +1,23 @@
 # Projet
+Description:  
+We want to realise a system to fluidize the traffic inside the MTR by giving in real time the optimal
+direction to go in order to find some space in the next train.
+This system will simplify the traffic and have people win time, especially at the rush hour. It is made
+avoid the situation where you cannot get in the train but there is still space in another car.
 
-En python système d'affichage avec le sense hat sur raspberry Pi
+# First Step:
+(04/04/2018)
+Devlopment of 3 fonctions in python to display the directionnal arrow on the sense hat of the raspberry py
+
+direction_right(sense, color)
+direction_left(sense, color)
+direction_down(sense, color)
+
+result of direction_right is an arrow pointed on the right
+
+We put as an argument the sense hat and the color of the arrow that we want.
+
+Next step:
+Determining the values of the tuple for the color green, orange and red
+then create a function to say what to print in each case (empty to full = green to red, + good direction)
+
