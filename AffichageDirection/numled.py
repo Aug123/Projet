@@ -65,9 +65,19 @@ def direction_right(sense, color=(255, 255, 255)):
 	if not sense:
 		raise Exception("Sense HAT is unavailable")
 	sense.clear()	
-	sense.set_pixel(1,4,color)
-	
+	for column in range(0, 3):
+		sense.set_pixel(column,4,color)
+		sense.set_pixel(column,3,color)
 		
+	for row in range(0,7):
+		sense.set_pixel(4,row,color)
+	for row in range(1,6):
+		sense.set_pixel(5,row,color)
+	for row in range(2,5):
+		sense.set_pixel(6,row,color)
+	for row in range(3,4):
+		sense.set_pixel(7,row,color)	
+	
 	
 	
 	
