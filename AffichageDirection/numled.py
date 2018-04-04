@@ -59,27 +59,3 @@ def show_digit(sense, value, x=0, y=0, color=(255, 255, 255)):
 			else:
 				sense.set_pixel(column, row, color)
 				
-				
-def direction_right(sense, color=(255, 255, 255)):
-	"""used to print an arrow in the right direction"""
-	if not sense:
-		raise Exception("Sense HAT is unavailable")
-	sense.clear()	
-	for column in range(0, 4):
-		sense.set_pixel(column,4,color)
-		sense.set_pixel(column,3,color)
-		
-	for row in range(0,8):
-		sense.set_pixel(4,row,color)
-	for row in range(1,7):
-		sense.set_pixel(5,row,color)
-	for row in range(2,6):
-		sense.set_pixel(6,row,color)
-	for row in range(3,5):
-		sense.set_pixel(7,row,color)	
-	
-	
-	
-	
-	
-	

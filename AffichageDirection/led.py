@@ -5,9 +5,12 @@ Created on 4 avr. 2018
 '''
 from sense_hat import SenseHat
 import time
-import numled
+import Directions
 
 sense=SenseHat()
 
-numled.direction_right(sense, (255,255,255))
-
+Directions.direction_right(sense, (255,255,255))
+time.sleep(5)
+Directions.direction_left(sense, (255,255,255))
+time.sleep(5)
+Directions.direction_down(sense, (255,255,255))
