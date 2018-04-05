@@ -7,7 +7,3 @@ class colour:
     RED = (255,0,0)
     GREEN = (0,255,0)
     ORANGE = (255,128,0)
-
-print(colour.RED)
-
-    
