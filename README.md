@@ -24,6 +24,6 @@ then create a function to say what to print in each case (empty to full = green 
 # Step Two
 (05/04/2018)  
 
-Etablishing the function which prints the rigth direction with this logic:
+Etablishing the function which prints the rigth direction with this logic:  
 |Left | Down | Right |
 | -1  |   0  |   1   |
