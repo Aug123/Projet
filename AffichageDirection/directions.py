@@ -57,3 +57,23 @@ def direction_down(sense, color=(255,255,255)):
         sense.set_pixel(column,6,color)
     for column in range(3,5):
         sense.set_pixel(column,7,color)
+        
+
+
+def diplay_good_direction(sense, d, color=(255,255,255)):
+    
+    if not sense:
+        raise Exception("Sense HAT is unavailable")
+    
+    if d==-1:
+        direction_left(sense, color)
+    elif d==0:
+        direction_down(sense, color)
+    elif d==1:
+        direction_right(sense, color)
+    else:
+        raise Exception("Identification of the direction not -1, 0 or 1")
+    
+    
+    
+    
