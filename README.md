@@ -29,3 +29,9 @@ Etablishing the function which prints the rigth direction with this logic:
 |Left|Down|Right|  
 |----|----|-----|
 |-1|0|1|
+
+I found the good tuple for the colors and put them in a class: colour
+
+Next Step :  
+Create the server on my laptop and a client on the display system.
+Try to send data an print the good color with the good direction.
