@@ -35,3 +35,15 @@ I found the good tuple for the colors and put them in a class: colour
 Next Step :  
 Create the server on my laptop and a client on the display system.
 Try to send data an print the good color with the good direction.
+
+# Step Tree
+(03/05/2018)
+
+I did the hotspot wifi on one of my Raspberry and fiwed the IP adress. In fact I did't really enabled a router but i fixed the IP addresses on each pi. My hotspot wifi is working with a bridge so if the IP address is already taken then a free random address is given to the pi which is trying to connect. 
+To prevent the addresses of my pi to be already taken I chose a middle range adresses
+from 172.16.42.58 to 172.16.42.61 (the netmask is 255.255.0.0 for the network on the lab and there is minimum chances that these addresses will be reached one day)
+
+# Step four
+(04/05/2018)
+
+Today I did the processing function of the server. The server will receive an array list of carInformation and process it to have as an output an array list of display Information. I use array list in the case that all the trains do not have the same length. However the train will always stop at the first door on the dock. In that way the system is working
