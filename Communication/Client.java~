@@ -1,0 +1,36 @@
+import java.io.*;
+import java.net.*;
+import java.util.*;
+
+public class ReverseStringClient {
+
+	public static void main(String[] args) throws Exception {
+		// Bind the socket to the server with the appropriate port
+		Socket socket = new Socket("localhost", 1234);
+
+		// Setup I/O streams
+		ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
+		ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
+
+		System.out.print("Enter the string you want to reverse: ");
+		Scanner scan = new Scanner(System.in);
+		String s;
+		s = scan.nextLine();
+		
+		long startTime, endTime, totalTime;
+		
+		startTime = System.currentTimeMillis();
+		
+		out.writeObject(s);
+		out.flush();
+		String result = (String) in.readObject();
+		
+		endTime = System.currentTimeMillis();
+		totalTime = endTime-startTime;
+		
+		System.out.println("Time to reach server and receive answer: " + totalTime + "ms");
+		
+		System.out.println("The result is: " + result);
+	}
+
+}
