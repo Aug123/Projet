@@ -7,7 +7,7 @@ public class DisplayInformation {
 	
 	public DisplayInformation(int pos) {
 		position=pos;
-		color.turnOff();
+		color=new Color();
 		direction=0;
 	}
 	
@@ -36,7 +36,7 @@ public class DisplayInformation {
 	}
 	
 	public void printInfo() {
-		System.out.println(position + " " + color.toString() + "  " + direction);
+		System.out.println(position + " " + direction + "  " + color.toString());
 	}
 
 	

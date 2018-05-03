@@ -14,7 +14,7 @@ public class Tri {
 			DisplayInformation dInfo = new DisplayInformation(i);
 
 			// For each position:
-			dInfo.setPosition(i+1);
+			dInfo.setPosition(list.get(i).getPosition());
 
 			// First, we set the color depending on the number of people in the car
 			// The car can contain 30 people
