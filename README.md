@@ -61,3 +61,6 @@ However this system only works for a small MTR network because as there is no ce
 
 Finally, I started working on the HTTP transmission by I enconter problems to enable the server.
 But I'm still working on it : show must go on!
+
+Finally I thing I'll use Flask for the HTTP server in this way it'll be easier.
+And implement it on the pi and agree with HTTP connection to avoid connection refused due to connection restuctions
