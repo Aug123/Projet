@@ -47,3 +47,17 @@ from 172.16.42.58 to 172.16.42.61 (the netmask is 255.255.0.0 for the network on
 (04/05/2018)
 
 Today I did the processing function of the server. The server will receive an array list of carInformation and process it to have as an output an array list of display Information. I use array list in the case that all the trains do not have the same length. However the train will always stop at the first door on the dock. In that way the system is working
+
+# Step Five
+(05/05/2018)
+
+Today I have upgaded my fix ip addresses for my hotspot by implementing a real router instead of bridging the connection between ethernet and wifi. For this I came back on the last version of the py and followed the tutorial of the lab 11.
+Then I determined the routing table for all of my Pi, and linked each mac adress to a fix IP.
+
+Then I did the communication part for the Raspberry Pis inside the train. I use TCP protocol on  Java and all pi send it's data to the representative who gather the information on an ArrayList.
+
+I then decided to process the infomation directly on the raspberry pi representative to get the display informations. There is just a few operations and this can avoid using a physical server. Then the data is directly send to the good dock.
+However this system only works for a small MTR network because as there is no centralisation on the data there could be issues. with just a few MTR train the maintenance is easily done while in a large network it is more difficult.
+
+Finally, I started working on the HTTP transmission by I enconter problems to enable the server.
+But I'm still working on it : show must go on!
